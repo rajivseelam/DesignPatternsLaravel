@@ -14,4 +14,8 @@
 Route::get('/', function()
 {
 	return View::make('hello');
+
 });
+
+Route::get('AbstractFactory/html',array('uses' => 'AbstractFactory@html'));
+Route::get('AbstractFactory/json',array('uses' => 'AbstractFactory@json'));
