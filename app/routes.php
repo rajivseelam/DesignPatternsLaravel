@@ -46,4 +46,10 @@ Route::group(array('prefix' => 'SimpleFactory'), function()
 
 });
 
+Route::group(array('prefix' => 'Pool'), function()
+{
+	Route::get('index',array('uses' => 'PoolController@index'));
+});
+
+
 
