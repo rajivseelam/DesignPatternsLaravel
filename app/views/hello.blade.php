@@ -18,7 +18,19 @@
 				<h1>Design Patterns</h1>
 				<ul class="list-unstyled well">
 					@foreach($routes as $route)
-						<li> <a href="{{ $route->getUri() }}">{{ $route->getUri() }}</a> </li>
+
+						<li> 
+
+							@if($route->getPrefix())
+								<strong>{{ $route->getPrefix() }}</strong> :
+							@endif
+
+							<a href="{{ $route->getUri() }}"> 
+								{{ $route->getUri() }} 
+							</a> 
+							
+						</li>
+
 					@endforeach
 				</ul>
 			</div>
