@@ -30,4 +30,12 @@ Route::group(array('prefix' => 'Builder'), function()
 
 });
 
+Route::group(array('prefix' => 'StaticFactoryController'), function()
+{
+
+	Route::get('number',array('uses' => 'StaticFactoryController@number'));
+	Route::get('string',array('uses' => 'StaticFactoryController@string'));
+
+});
+
 
