@@ -17,18 +17,37 @@
 			<div class="col-md-12">
 				<h1>Design Patterns</h1>
 				<ul class="list-unstyled well">
+
+					<?php $prev = null; ?>
+
 					@foreach($routes as $route)
 
 						<li> 
 
 							@if($route->getPrefix())
+								<?php 
+
+									$curr = $route->getPrefix();
+
+									if(is_null($prev))
+									{
+										$prev = $curr;
+									}
+
+									if($prev != $curr)
+									{
+										$prev = $curr;
+										echo '<hr>';
+									}
+
+								?>
 								<strong>{{ $route->getPrefix() }}</strong> :
 							@endif
 
 							<a href="{{ $route->getUri() }}"> 
 								{{ $route->getUri() }} 
 							</a> 
-							
+
 						</li>
 
 					@endforeach
