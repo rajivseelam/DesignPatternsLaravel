@@ -69,8 +69,6 @@ class PoolController extends BaseController {
 		$processor->process('image7.jpg');
 		$processor->process('image8.jpg');
 
-		d($pool->getInstances()); die;
-
 	}
 
 
