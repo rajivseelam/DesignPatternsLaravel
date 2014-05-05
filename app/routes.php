@@ -11,11 +11,23 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/',array('uses' => 'HomeController@showWelcome'));
+
+Route::group(array('prefix' => 'AbstractFactory'), function()
 {
-	return View::make('hello');
+
+	Route::get('html',array('uses' => 'AbstractFactory@html'));
+	Route::get('json',array('uses' => 'AbstractFactory@json'));
 
 });
 
-Route::get('AbstractFactory/html',array('uses' => 'AbstractFactory@html'));
-Route::get('AbstractFactory/json',array('uses' => 'AbstractFactory@json'));
+
+Route::group(array('prefix' => 'Builder'), function()
+{
+
+	Route::get('car',array('uses' => 'Builder@car'));
+	Route::get('bike',array('uses' => 'Builder@bike'));
+
+});
+
+
