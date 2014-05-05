@@ -5,6 +5,11 @@ use DesignPatterns\FactoryMethod\ItalianFactory;
 
 class FactoryMethodController extends BaseController {
 
+	/**
+	 * The essence of this pattern is to "Define an interface for creating an object, 
+	 * but let the classes that implement the interface decide which class to instantiate. 
+	 * The Factory method lets a class defer instantiation to subclasses."
+	 */
 
 	/**
 	 * undocumented function
