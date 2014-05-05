@@ -3,7 +3,7 @@
 use DesignPatterns\AbstractFactory\HtmlFactory;
 use DesignPatterns\AbstractFactory\JsonFactory;
 
-class AbstractFactory extends BaseController {
+class AbstractFactoryController extends BaseController {
 
 	/**
 	 * undocumented function

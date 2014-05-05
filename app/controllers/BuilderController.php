@@ -5,7 +5,7 @@ use DesignPatterns\Builder\Director;
 use DesignPatterns\Builder\CarBuilder;
 use DesignPatterns\Builder\BikeBuilder;
 
-class Builder extends BaseController {
+class BuilderController extends BaseController {
 
 	/**
 	 *

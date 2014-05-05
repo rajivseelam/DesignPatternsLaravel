@@ -16,8 +16,8 @@ Route::get('/',array('uses' => 'HomeController@showWelcome'));
 Route::group(array('prefix' => 'AbstractFactory'), function()
 {
 
-	Route::get('html',array('uses' => 'AbstractFactory@html'));
-	Route::get('json',array('uses' => 'AbstractFactory@json'));
+	Route::get('html',array('uses' => 'AbstractFactoryController@html'));
+	Route::get('json',array('uses' => 'AbstractFactoryController@json'));
 
 });
 
@@ -25,12 +25,12 @@ Route::group(array('prefix' => 'AbstractFactory'), function()
 Route::group(array('prefix' => 'Builder'), function()
 {
 
-	Route::get('car',array('uses' => 'Builder@car'));
-	Route::get('bike',array('uses' => 'Builder@bike'));
+	Route::get('car',array('uses' => 'BuilderController@car'));
+	Route::get('bike',array('uses' => 'BuilderController@bike'));
 
 });
 
-Route::group(array('prefix' => 'StaticFactoryController'), function()
+Route::group(array('prefix' => 'StaticFactory'), function()
 {
 
 	Route::get('number',array('uses' => 'StaticFactoryController@number'));
