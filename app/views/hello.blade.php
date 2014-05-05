@@ -44,7 +44,7 @@
 								<strong>{{ $route->getPrefix() }}</strong> :
 							@endif
 
-							<a href="{{ $route->getUri() }}"> 
+							<a href="{{ $route->getUri() }}" target="_blank"> 
 								{{ $route->getUri() }} 
 							</a> 
 

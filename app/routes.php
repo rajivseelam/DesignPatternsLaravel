@@ -48,10 +48,16 @@ Route::group(array('prefix' => 'SimpleFactory'), function()
 
 Route::group(array('prefix' => 'DependencyInjection'), function()
 {
-
 	Route::get('arrayconfig',array('uses' => 'DependencyInjectionController@arrayConfig'));
+});
+
+Route::group(array('prefix' => 'FactoryMethod'), function()
+{
+	Route::get('german',array('uses' => 'FactoryMethodController@german'));
+	Route::get('italian',array('uses' => 'FactoryMethodController@italian'));
 
 });
+
 
 
 
