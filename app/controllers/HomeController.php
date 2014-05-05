@@ -17,7 +17,9 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		$routes = Route::getRoutes();
+
+		return View::make('hello',compact('routes'));
 	}
 
 }
