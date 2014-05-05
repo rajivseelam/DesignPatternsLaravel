@@ -46,4 +46,12 @@ Route::group(array('prefix' => 'SimpleFactory'), function()
 
 });
 
+Route::group(array('prefix' => 'DependencyInjection'), function()
+{
+
+	Route::get('arrayconfig',array('uses' => 'DependencyInjectionController@arrayConfig'));
+
+});
+
+
 
