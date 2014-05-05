@@ -51,5 +51,13 @@ Route::group(array('prefix' => 'Pool'), function()
 	Route::get('index',array('uses' => 'PoolController@index'));
 });
 
+Route::group(array('prefix' => 'Adapter'), function()
+{
+	Route::get('book/start',array('uses' => 'AdapterController@start'));
+	Route::get('book/next',array('uses' => 'AdapterController@next'));
+
+});
+
+
 
 
