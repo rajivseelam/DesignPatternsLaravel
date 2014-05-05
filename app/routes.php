@@ -38,4 +38,12 @@ Route::group(array('prefix' => 'StaticFactory'), function()
 
 });
 
+Route::group(array('prefix' => 'SimpleFactory'), function()
+{
+
+	Route::get('bicycle',array('uses' => 'SimpleFactoryController@bicycle'));
+	Route::get('scooter',array('uses' => 'SimpleFactoryController@scooter'));
+
+});
+
 
