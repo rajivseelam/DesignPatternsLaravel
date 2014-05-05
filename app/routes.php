@@ -58,6 +58,11 @@ Route::group(array('prefix' => 'Adapter'), function()
 
 });
 
+Route::group(array('prefix' => 'Composite'), function()
+{
+	Route::get('form',array('uses' => 'CompositeController@form'));
+});
+
 
 
 
