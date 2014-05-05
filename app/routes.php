@@ -63,6 +63,11 @@ Route::group(array('prefix' => 'Composite'), function()
 	Route::get('form',array('uses' => 'CompositeController@form'));
 });
 
+Route::group(array('prefix' => 'Decorator'), function()
+{
+	Route::get('jsonxml',array('uses' => 'DecoratorController@jsonxml'));
+});
+
 
 
 
