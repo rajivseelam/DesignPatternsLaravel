@@ -58,6 +58,13 @@ Route::group(array('prefix' => 'FactoryMethod'), function()
 
 });
 
+Route::group(array('prefix' => 'Prototype'), function()
+{
+	Route::get('foobook',array('uses' => 'PrototypeController@foobook'));
+	Route::get('barbook',array('uses' => 'PrototypeController@barbook'));
+
+});
+
 
 
 

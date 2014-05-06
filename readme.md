@@ -29,7 +29,7 @@ The patterns can be structured in roughly three different categories. Please cli
 * [AbstractFactory](AbstractFactory) [:notebook:](http://en.wikipedia.org/wiki/Abstract_factory_pattern) - Done
 * [Builder](Builder) [:notebook:](http://en.wikipedia.org/wiki/Builder_pattern) - Done
 * [SimpleFactory](SimpleFactory) - Done
-* [FactoryMethod](FactoryMethod) [:notebook:](http://en.wikipedia.org/wiki/Factory_method_pattern)
+* [FactoryMethod](FactoryMethod) [:notebook:](http://en.wikipedia.org/wiki/Factory_method_pattern) - Done
 * [StaticFactory](StaticFactory) - Done
 * [Prototype](Prototype) [:notebook:](http://en.wikipedia.org/wiki/Prototype_pattern)
 * [Pool](Pool) [:notebook:](http://en.wikipedia.org/wiki/Object_pool_pattern)
