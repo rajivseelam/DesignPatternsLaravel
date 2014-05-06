@@ -46,6 +46,7 @@ Route::group(array('prefix' => 'SimpleFactory'), function()
 
 });
 
+
 Route::group(array('prefix' => 'DependencyInjection'), function()
 {
 	Route::get('arrayconfig',array('uses' => 'DependencyInjectionController@arrayConfig'));
@@ -63,6 +64,28 @@ Route::group(array('prefix' => 'Prototype'), function()
 	Route::get('foobook',array('uses' => 'PrototypeController@foobook'));
 	Route::get('barbook',array('uses' => 'PrototypeController@barbook'));
 
+
+Route::group(array('prefix' => 'Pool'), function()
+{
+	Route::get('index',array('uses' => 'PoolController@index'));
+});
+
+Route::group(array('prefix' => 'Adapter'), function()
+{
+	Route::get('book/start',array('uses' => 'AdapterController@start'));
+	Route::get('book/next',array('uses' => 'AdapterController@next'));
+
+});
+
+Route::group(array('prefix' => 'Composite'), function()
+{
+	Route::get('form',array('uses' => 'CompositeController@form'));
+});
+
+Route::group(array('prefix' => 'Decorator'), function()
+{
+	Route::get('jsonxml',array('uses' => 'DecoratorController@jsonxml'));
+	
 });
 
 
