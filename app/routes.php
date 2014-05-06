@@ -63,7 +63,7 @@ Route::group(array('prefix' => 'Prototype'), function()
 {
 	Route::get('foobook',array('uses' => 'PrototypeController@foobook'));
 	Route::get('barbook',array('uses' => 'PrototypeController@barbook'));
-
+});
 
 Route::group(array('prefix' => 'Pool'), function()
 {
@@ -85,9 +85,5 @@ Route::group(array('prefix' => 'Composite'), function()
 Route::group(array('prefix' => 'Decorator'), function()
 {
 	Route::get('jsonxml',array('uses' => 'DecoratorController@jsonxml'));
-	
+
 });
-
-
-
-
