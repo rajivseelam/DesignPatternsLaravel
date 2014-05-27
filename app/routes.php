@@ -87,3 +87,9 @@ Route::group(array('prefix' => 'Decorator'), function()
 	Route::get('jsonxml',array('uses' => 'DecoratorController@jsonxml'));
 
 });
+
+Route::group(array('prefix' => 'Facade'), function()
+{
+	Route::get('/',array('uses' => 'FacadeController@index'));
+
+});
